@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Ibrahim Banihani</title>
+  <meta name="description" content="Ibrahim Banihani's portfolio of IT and software development projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand"><span class="brand-icon">&lt;IB/&gt;</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
+      <li><a href="projects.html" class="nav-link active">Projects</a></li>
+      <li><a href="contact.html" class="nav-link btn-nav">Contact Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="page-header">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Projects</p>
+      <h1>My <span class="gradient-text">Projects</span></h1>
+      <p class="page-subtitle">Things I've built that I'm proud of</p>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+        <button class="filter-btn" data-filter="web" id="filterWeb">Web</button>
+        <button class="filter-btn" data-filter="mobile" id="filterMobile">Mobile</button>
+        <button class="filter-btn" data-filter="network" id="filterNetwork">Networking</button>
+        <button class="filter-btn" data-filter="security" id="filterSecurity">Security</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-cat="web">
+          <div class="project-banner" style="background: linear-gradient(135deg, #6c63ff, #4f46e5);">
+            <div class="project-icon-large">🌐</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">Full Stack</span>
+            </div>
+            <h3>Smart Hospital Management System</h3>
+            <p>A full-stack web application to manage hospital operations — patient records, appointments, prescriptions, billing, and staff management. Built with Python Django backend and React frontend.</p>
+            <div class="project-tech">
+              <span>Django</span><span>React</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" id="projLink1">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link project-link-live" id="projLive1">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="mobile">
+          <div class="project-banner" style="background: linear-gradient(135deg, #ec4899, #be185d);">
+            <div class="project-icon-large">📱</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Mobile</span>
+              <span class="project-tag">Flutter</span>
+            </div>
+            <h3>Jordan Tourism Explorer App</h3>
+            <p>A cross-platform mobile app showcasing Jordan's top tourist destinations with interactive maps, photo galleries, visitor reviews, a quiz game, and audio tours in Arabic and English.</p>
+            <div class="project-tech">
+              <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Google Maps API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" id="projLink2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="network">
+          <div class="project-banner" style="background: linear-gradient(135deg, #10b981, #059669);">
+            <div class="project-icon-large">🏢</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Networking</span>
+              <span class="project-tag">Infrastructure</span>
+            </div>
+            <h3>Enterprise Network Design</h3>
+            <p>Designed and simulated a full enterprise network for a 3-floor office building using Cisco Packet Tracer. Includes inter-VLAN routing, OSPF, DHCP, NAT, and redundant WAN links.</p>
+            <div class="project-tech">
+              <span>Cisco Packet Tracer</span><span>OSPF</span><span>VLAN</span><span>NAT</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" id="projLink3">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="security">
+          <div class="project-banner" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+            <div class="project-icon-large">🔐</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Security</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <h3>Network Vulnerability Scanner</h3>
+            <p>A Python-based tool that scans local network hosts for open ports, outdated services, and known CVEs. Generates detailed HTML reports with risk scores and remediation suggestions.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Nmap</span><span>CVE API</span><span>HTML Reports</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" id="projLink4">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="web">
+          <div class="project-banner" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+            <div class="project-icon-large">🛒</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <h3>E-Commerce Platform</h3>
+            <p>A fully functional online store with product catalog, shopping cart, payment gateway integration (Stripe), order tracking, and an admin dashboard with analytics.</p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Stripe API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" id="projLink5">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link project-link-live" id="projLive5">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="security">
+          <div class="project-banner" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">
+            <div class="project-icon-large">🛡️</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Security</span>
+              <span class="project-tag">Monitoring</span>
+            </div>
+            <h3>SIEM Dashboard</h3>
+            <p>A custom Security Information and Event Management dashboard built to aggregate logs from multiple sources, detect anomalies using rule-based analysis, and alert administrators in real-time.</p>
+            <div class="project-tech">
+              <span>ELK Stack</span><span>Python</span><span>Grafana</span><span>Kafka</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" id="projLink6">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ibrahim Banihani. Crafted with <span style="color:#f43f5e">♥</span> and lots of code.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
